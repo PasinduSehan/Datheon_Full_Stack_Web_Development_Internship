@@ -18,14 +18,12 @@ Datheon_Full_Stack_Web_Development_Internship/
 
 
 ## 🛠️ Completed Tasks & Live Demos
-
 | Task | Project Title | Key Technologies | Live Demo |
 | :--- | :--- | :--- | :--- |
-| **Task 01** | **Personal Developer Portfolio** | HTML5, CSS3 (Grid/Flexbox), JS (ES6+), Dark/Light Mode | https://pasindu-portfolio-kohl.vercel.app/ (#) *(Add Vercel Link)* |
-| **Task 02** | **Dynamic Task Manager (CRUD)** | JavaScript (ES6+), DOM API, `localStorage`, CSS Transitions | https://task-manager-ten-drab-31.vercel.app/ (#) *(Add Vercel Link)* |
-| **Task 03** | **Real-Time Weather Telemetry App** | Fetch API, Async/Await, Open-Meteo REST API, Dynamic UI | https://weather-app-self-two-93.vercel.app/ (#) *(Add Vercel Link)* |
-| **Task 04** | **E-Commerce Catalog & Cart** | FakeStoreAPI, State Management, Slide-out Cart Drawer | https://ecommerce-store-lemon-rho.vercel.app/ (#) *(Add Vercel Link)* |
-
+| **Task 01** | **Personal Developer Portfolio** | HTML5, CSS3 (Grid/Flexbox), JS (ES6+), Dark/Light Mode | [Live Demo](https://pasindu-portfolio-kohl.vercel.app/) |
+| **Task 02** | **Dynamic Task Manager (CRUD)** | JavaScript (ES6+), DOM API, `localStorage`, CSS Transitions | [Live Demo](https://task-manager-ten-drab-31.vercel.app/) |
+| **Task 03** | **Real-Time Weather Telemetry App** | Fetch API, Async/Await, Open-Meteo REST API, Dynamic UI | [Live Demo](https://weather-app-self-two-93.vercel.app/) |
+| **Task 04** | **E-Commerce Catalog & Cart** | FakeStoreAPI, State Management, Slide-out Cart Drawer | [Live Demo](https://ecommerce-store-lemon-rho.vercel.app/) |
 ---
 
 ## ✨ Project Highlights
