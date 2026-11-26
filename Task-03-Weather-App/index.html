@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyPulse | Real-Time Weather & Climate Telemetry</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body class="theme-default">
+  <div class="weather-app">
+    <!-- Top Search Bar -->
+    <header class="app-header">
+      <div class="brand">
+        <i class="fas fa-satellite-dish"></i>
+        <span>SkyPulse Telemetry</span>
+      </div>
+      <form id="searchForm" class="search-form">
+        <input
+          type="text"
+          id="cityInput"
+          placeholder="Search city (e.g. Colombo, Tokyo, London)..."
+          required
+        />
+        <button type="submit" aria-label="Search City">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+    </header>
+
+    <!-- Loading Spinner -->
+    <div id="loader" class="state-box hidden">
+      <div class="spinner"></div>
+      <p>Fetching live atmospheric telemetry...</p>
+    </div>
+
+    <!-- Error Message -->
+    <div id="errorBox" class="error-box hidden">
+      <i class="fas fa-exclamation-triangle"></i>
+      <span id="errorText">City not found. Please try again.</span>
+    </div>
+
+    <!-- Main Weather Dashboard -->
+    <main id="weatherDashboard" class="dashboard hidden">
+      <!-- Current Weather Hero Card -->
+      <section class="current-card">
+        <div class="location-info">
+          <h1 id="cityName">Colombo, LK</h1>
+          <p id="currentDate">Thursday, Nov 26, 2026</p>
+          <span id="conditionBadge" class="condition-pill">Clear Sky</span>
+        </div>
+
+        <div class="temp-display">
+          <i id="weatherIcon" class="fas fa-sun main-icon"></i>
+          <div class="temp-value">
+            <span id="currentTemp">29</span><span class="unit">°C</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Telemetry Metrics Grid -->
+      <section class="metrics-grid">
+        <div class="metric-card">
+          <i class="fas fa-tint"></i>
+          <div>
+            <span class="metric-label">Humidity</span>
+            <strong id="humidityValue">74%</strong>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <i class="fas fa-wind"></i>
+          <div>
+            <span class="metric-label">Wind Speed</span>
+            <strong id="windValue">14 km/h</strong>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <i class="fas fa-tachometer-alt"></i>
+          <div>
+            <span class="metric-label">Pressure</span>
+            <strong id="pressureValue">1012 hPa</strong>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <i class="fas fa-temperature-half"></i>
+          <div>
+            <span class="metric-label">Feels Like</span>
+            <strong id="feelsLikeValue">32°C</strong>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5-Day Forecast Section -->
+      <section class="forecast-section">
+        <h2>5-Day Climate Forecast</h2>
+        <div id="forecastGrid" class="forecast-grid">
+          <!-- Forecast cards injected via JS -->
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

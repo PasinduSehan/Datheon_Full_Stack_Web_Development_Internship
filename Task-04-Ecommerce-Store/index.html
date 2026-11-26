@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaMart | E-Commerce Catalog & Cart</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="logo"><i class="fas fa-bag-shopping"></i> Nova<span>Mart</span></a>
+
+      <div class="search-bar">
+        <i class="fas fa-search"></i>
+        <input type="text" id="searchInput" placeholder="Search products..." />
+      </div>
+
+      <button id="openCartBtn" class="cart-btn" aria-label="Open Shopping Cart">
+        <i class="fas fa-shopping-cart"></i>
+        <span>Cart</span>
+        <span id="cartBadge" class="badge">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Storefront -->
+  <main class="container main-section">
+    <!-- Category Filter Buttons -->
+    <div class="filter-bar">
+      <h2>Featured Catalog</h2>
+      <div id="categoryButtons" class="category-pills">
+        <button class="cat-btn active" data-category="all">All Products</button>
+        <button class="cat-btn" data-category="electronics">Electronics</button>
+        <button class="cat-btn" data-category="jewelery">Jewelry</button>
+        <button class="cat-btn" data-category="men's clothing">Men's Clothing</button>
+        <button class="cat-btn" data-category="women's clothing">Women's Clothing</button>
+      </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div id="loader" class="loader-container">
+      <div class="spinner"></div>
+      <p>Loading catalog from FakeStoreAPI...</p>
+    </div>
+
+    <!-- Error Message -->
+    <div id="errorMessage" class="error-box hidden"></div>
+
+    <!-- Product Grid -->
+    <section id="productGrid" class="product-grid"></section>
+  </main>
+
+  <!-- Slide-out Cart Drawer -->
+  <div id="cartOverlay" class="drawer-overlay"></div>
+  <aside id="cartDrawer" class="cart-drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <h3><i class="fas fa-shopping-bag"></i> Your Cart</h3>
+      <button id="closeCartBtn" class="close-btn" aria-label="Close Cart">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <div id="cartItemsContainer" class="drawer-body">
+      <!-- Cart items injected via JS -->
+    </div>
+
+    <div class="drawer-footer">
+      <div class="summary-row">
+        <span>Subtotal</span>
+        <span id="subtotalAmount">$0.00</span>
+      </div>
+      <div class="summary-row">
+        <span>Estimated Tax (5%)</span>
+        <span id="taxAmount">$0.00</span>
+      </div>
+      <div class="summary-row">
+        <span>Shipping</span>
+        <span id="shippingAmount">$0.00</span>
+      </div>
+      <div class="summary-row total-row">
+        <span>Total</span>
+        <span id="totalAmount">$0.00</span>
+      </div>
+      <button id="checkoutBtn" class="checkout-btn" disabled>
+        Proceed to Checkout <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Simulated Checkout Modal -->
+  <div id="checkoutModal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+      <h2>Order Confirmed!</h2>
+      <p>Thank you for shopping with NovaMart. Your simulated order has been placed successfully.</p>
+      <p class="order-total-note">Total Paid: <strong id="modalPaidAmount">$0.00</strong></p>
+      <button id="closeModalBtn" class="btn-primary">Continue Shopping</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

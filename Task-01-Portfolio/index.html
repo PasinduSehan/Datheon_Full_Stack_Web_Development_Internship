@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pasindu Sehan | Full Stack & DevOps Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">Pasindu<span>.dev</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-item">Home</a></li>
+        <li><a href="#about" class="nav-item">About</a></li>
+        <li><a href="#skills" class="nav-item">Skills</a></li>
+        <li><a href="#projects" class="nav-item">Projects</a></li>
+        <li><a href="#contact" class="nav-item">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle Dark/Light Theme">
+          <i class="fas fa-sun"></i>
+        </button>
+        <button id="hamburgerBtn" class="icon-btn hamburger" aria-label="Open Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero section">
+    <div class="container hero-content">
+      <p class="hero-tag">👋 Hello, I'm</p>
+      <h1 class="hero-title">Pasindu Sehan</h1>
+      <h2 class="hero-subtitle">Full Stack Web Developer & DevOps Enthusiast</h2>
+      <p class="hero-desc">
+        I build responsive, modern web applications and automate cloud deployments with clean, scalable code.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View My Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am a passionate software engineering and DevOps intern focused on building full-stack web solutions, containerized deployments, and intuitive user interfaces.
+          </p>
+          <p>
+            Currently developing industry-modeled web applications during my Full Stack Web Development Internship at Datheon, focusing on modern JavaScript, responsive UI design, and REST APIs.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <h3>10+</h3>
+            <p>GitHub Repositories</p>
+          </div>
+          <div class="stat-card">
+            <h3>Full Stack</h3>
+            <p>Frontend & Backend</p>
+          </div>
+          <div class="stat-card">
+            <h3>DevOps</h3>
+            <p>Docker & CI/CD</p>
+          </div>
+          <div class="stat-card">
+            <h3>100%</h3>
+            <p>Responsive Design</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Grid Section -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <h2 class="section-title">Tech Stack & Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-html5 skill-icon"></i>
+          <h3>HTML5 & CSS3</h3>
+          <p>Semantic markup, Flexbox, CSS Grid, Responsive Design</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-js skill-icon"></i>
+          <h3>JavaScript (ES6+)</h3>
+          <p>DOM Manipulation, Async/Await, Fetch API, LocalStorage</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-node-js skill-icon"></i>
+          <h3>Node.js & Express</h3>
+          <p>RESTful APIs, Server-side logic, Redis integration</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-docker skill-icon"></i>
+          <h3>Docker & Linux</h3>
+          <p>Multi-stage containers, Docker Compose, Linux CLI</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-git-alt skill-icon"></i>
+          <h3>Git & GitHub Actions</h3>
+          <p>Version control, CI/CD pipelines, Automated testing</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-cloud skill-icon"></i>
+          <h3>Cloud Deployment</h3>
+          <p>Vercel, Netlify, GitHub Pages, Render</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-badge">Task 01</div>
+          <h3>Developer Portfolio Website</h3>
+          <p>A mobile-first responsive personal portfolio with Dark/Light theme switching and modal project previews.</p>
+          <div class="tech-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="project-actions">
+            <button class="btn btn-sm btn-primary open-modal-btn" data-project="0">View Details</button>
+            <a href="https://github.com/PasinduSehan" target="_blank" class="btn btn-sm btn-outline">GitHub</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-badge">Task 02</div>
+          <h3>Dynamic Task Manager (CRUD)</h3>
+          <p>Productivity app with full CRUD operations, category filtering, due dates, and browser localStorage persistence.</p>
+          <div class="tech-tags">
+            <span>JavaScript</span>
+            <span>localStorage</span>
+            <span>CSS Grid</span>
+          </div>
+          <div class="project-actions">
+            <button class="btn btn-sm btn-primary open-modal-btn" data-project="1">View Details</button>
+            <a href="https://github.com/PasinduSehan" target="_blank" class="btn btn-sm btn-outline">GitHub</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-badge">Task 04</div>
+          <h3>E-Commerce Catalog & Cart</h3>
+          <p>Interactive online store fetching live product data from FakeStoreAPI with category filters and slide-out cart drawer.</p>
+          <div class="tech-tags">
+            <span>Fetch API</span>
+            <span>ES6+</span>
+            <span>Responsive UI</span>
+          </div>
+          <div class="project-actions">
+            <button class="btn btn-sm btn-primary open-modal-btn" data-project="2">View Details</button>
+            <a href="https://github.com/PasinduSehan" target="_blank" class="btn btn-sm btn-outline">GitHub</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <div class="container contact-container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-desc">Feel free to reach out for collaborations, internships, or project inquiries.</p>
+      <div class="contact-links">
+        <a href="mailto:psehan12@gmail.com" class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <span>psehan12@gmail.com</span>
+        </a>
+        <a href="https://github.com/PasinduSehan" target="_blank" class="contact-card">
+          <i class="fab fa-github"></i>
+          <span>github.com/PasinduSehan</span>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="contact-card">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn Profile</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Pasindu Sehan. Built for Datheon Full Stack Web Development Internship.</p>
+    </div>
+  </footer>
+
+  <!-- Project Details Modal Popup -->
+  <div id="projectModal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-box">
+      <button id="closeModalBtn" class="modal-close" aria-label="Close Modal">
+        <i class="fas fa-times"></i>
+      </button>
+      <span id="modalBadge" class="project-badge">Task</span>
+      <h3 id="modalTitle">Project Title</h3>
+      <p id="modalDescription" class="modal-desc">Project full description goes here.</p>
+      <div class="modal-features">
+        <h4>Key Features:</h4>
+        <ul id="modalFeaturesList"></ul>
+      </div>
+      <div id="modalTech" class="tech-tags"></div>
+      <div class="modal-footer">
+        <a id="modalGithubLink" href="#" target="_blank" class="btn btn-primary">
+          <i class="fab fa-github"></i> View Source Code
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
