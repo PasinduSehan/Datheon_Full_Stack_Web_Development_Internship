@@ -14,7 +14,7 @@ Datheon_Full_Stack_Web_Development_Internship/
 ├── Task-03-Weather-App/       # Real-Time Weather Forecast & Climate Telemetry App
 ├── Task-04-Ecommerce-Store/   # E-Commerce Product Catalog & Shopping Cart
 └── README.md
-
+```
 
 
 ## 🛠️ Completed Tasks & Live Demos
